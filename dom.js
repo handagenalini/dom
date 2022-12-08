@@ -20,13 +20,23 @@
 
 
 
-var items=document.getElementsByClassName("list-group-item")
-console.log(items)
-console.log(items[1])
-items[1].textContent="hello2"
-items[1].style.fontWeight="bold"
-items[2].style.backgroundColor="green"
-for(var i=0;i<items.length;i++){
-    items[i].style.fontWeight="bold"
-    items[i].style.color="red"
+// var items=document.getElementsByClassName("list-group-item")
+// console.log(items)
+// console.log(items[1])
+// items[1].textContent="hello2"
+// items[1].style.fontWeight="bold"
+// items[2].style.backgroundColor="green"
+// for(var i=0;i<items.length;i++){
+//     items[i].style.fontWeight="bold"
+//     items[i].style.color="red"
+// }
+var li=document.getElementsByClassName("list-group-item")
+console.log(li)
+console.log(li[1])
+li[1].textContent="hello2"
+li[1].style.fontWeight="bold"
+li[2].style.backgroundColor="green"
+for(var i=0;i<li.length;i++){
+    li[i].style.fontWeight="bold"
+    li[i].style.color="red"
 }
