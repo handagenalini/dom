@@ -40,34 +40,66 @@
 //     li[i].style.fontWeight="bold"
 //     li[i].style.color="red"
 // }
-var header=document.querySelector("#main-header");
-header.style.borderBottom="solid 4px #ccc"
+// var header=document.querySelector("#main-header");
+// header.style.borderBottom="solid 4px #ccc"
 
-var input=document.querySelector("input")
-input.value="hello world"
-var submit=document.querySelector("input[type='submit']")
-submit.value='send'
+// var input=document.querySelector("input")
+// input.value="hello world"
+// var submit=document.querySelector("input[type='submit']")
+// submit.value='send'
 
-var item=document.querySelector('.list-group-item')
-item.style.color='red'
+// var item=document.querySelector('.list-group-item')
+// item.style.color='red'
 
-var lastitem=document.querySelector(".list-group-item:last-child")
-lastitem.style.color="blue"
+// var lastitem=document.querySelector(".list-group-item:last-child")
+// lastitem.style.color="blue"
 
-var seconditem=document.querySelector('.list-group-item:nth-child(2)')
-seconditem.style.color="coral"
+// var seconditem=document.querySelector('.list-group-item:nth-child(2)')
+// seconditem.style.color="coral"
 
-var titles=document.querySelectorAll('.title')
-console.log(titles)
-titles[0].textContent="hello"
+// var titles=document.querySelectorAll('.title')
+// console.log(titles)
+// titles[0].textContent="hello"
 
-var odd=document.querySelectorAll('li:nth-child(odd)')
-var even=document.querySelectorAll('li:nth-child(even)')
+// var odd=document.querySelectorAll('li:nth-child(odd)')
+// var even=document.querySelectorAll('li:nth-child(even)')
 
-for(var i=0;i<odd.length;i++){
-    odd[i].style.backgroundColor='#f4f4f4'
-    even[i].style.backgroundColor='coral'
+// for(var i=0;i<odd.length;i++){
+//     odd[i].style.backgroundColor='#f4f4f4'
+//     even[i].style.backgroundColor='coral'
 
-}
+// // }
+var itemlist=document.querySelector('#items')
+// console.log(itemlist.parentNode)
+// itemlist.parentNode.style.backgroundColor='f4f4f4'
+// console.log(itemlist.parentNode.parentNode.parentNode)
 
+// console.log(itemlist.parentElement)
+// itemlist.parentElement.style.backgroundColor='red'
+// console.log(itemlist.parentElement.parentElement.parentElement)
+// console.log(itemlist.childNodes)
+// console.log(itemlist.children[1])
+// itemlist.children[1].style.backgroundColor='yellow'
+// console.log(itemlist.firstChild)
+// console.log(itemlist.firstElementChild)
+// itemlist.firstElementChild.textContent='hello1'
+// console.log(itemlist.lastChild)
+// console.log(itemlist.lastElementChild)
+// itemlist.lastElementChild.textContent='hello4'
+// console.log(itemlist.nextSibling)
+// console.log(itemlist.nextElementSibling)
+// console.log(itemlist.previousSibling)
+// console.log(itemlist.previousElementSibling)
+// itemlist.previousElementSibling.style.backgroundColor='red'
+var newdiv=document.createElement('div')
+newdiv.className='hello'
+newdiv.id='hello1'
+newdiv.setAttribute('title','hellodiv')
+var newdivtext=document.createTextNode('hellow world')
 
+newdiv.appendChild(newdivtext)
+var container=document.querySelector('header.container')
+var h1=document.querySelector('header h1')
+// var newdivtext=document.createTextNode('hellow world')
+console.log(newdiv)
+container.insertBefore(newdiv,h1)
