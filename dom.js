@@ -69,7 +69,7 @@
 //     even[i].style.backgroundColor='coral'
 
 // // }
-var itemlist=document.querySelector('#items')
+// var itemlist=document.querySelector('#items')
 // console.log(itemlist.parentNode)
 // itemlist.parentNode.style.backgroundColor='f4f4f4'
 // console.log(itemlist.parentNode.parentNode.parentNode)
@@ -91,15 +91,17 @@ var itemlist=document.querySelector('#items')
 // console.log(itemlist.previousSibling)
 // console.log(itemlist.previousElementSibling)
 // itemlist.previousElementSibling.style.backgroundColor='red'
-var newdiv=document.createElement('div')
-newdiv.className='hello'
-newdiv.id='hello1'
-newdiv.setAttribute('title','hellodiv')
-var newdivtext=document.createTextNode('hellow world')
-
-newdiv.appendChild(newdivtext)
-var container=document.querySelector('header.container')
-var h1=document.querySelector('header h1')
+// var newdiv=document.createElement('div')
+// newdiv.className='hello'
+// newdiv.id='hello1'
+// newdiv.setAttribute('title','hellodiv')
 // var newdivtext=document.createTextNode('hellow world')
-console.log(newdiv)
-container.insertBefore(newdiv,h1)
+
+// newdiv.appendChild(newdivtext)
+// var container=document.querySelector('header.container')
+// var h1=document.querySelector('header h1')
+// // var newdivtext=document.createTextNode('hellow world')
+// console.log(newdiv)
+// container.insertBefore(newdiv,h1)
+
+
